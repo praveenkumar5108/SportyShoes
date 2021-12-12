@@ -23,5 +23,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/ptupilicisco/Downloads/AT Excel Report Jars/ExcelReportGenerator-4.0.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

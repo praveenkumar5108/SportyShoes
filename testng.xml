@@ -11,6 +11,7 @@
     <classes>
       <class name="tests.SignupPagetest"/>
 	<class name="tests.LoginPageTest"/>
+	<class name="tests.ProductAddTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
