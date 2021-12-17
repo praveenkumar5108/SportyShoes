@@ -18,8 +18,7 @@ public class SignupPage {
 	ExtentTest test = BaseClass.test;
 
 
-	//======================WebElements====================================
-	
+	//*************************WebElements**********************
 	@FindBy(linkText="Login/Signup")
 	WebElement SignBtn;
 	
@@ -60,7 +59,6 @@ public class SignupPage {
 		wait.until(ExpectedConditions.visibilityOf(SignBtn));
 		SignBtn.click();
 		SignUpLink.click();
-		test.log(LogStatus.PASS, "Click on SignUp Link", "Clicked on SignUp Link");
 		email.sendKeys(Emailval);
 		password.sendKeys(Passwordval);
 		Confirmpwd.sendKeys(Passwordval);
@@ -69,7 +67,7 @@ public class SignupPage {
 		Age.sendKeys(Ageval);
 		Address.sendKeys(Addressval);
 		SignUpFinal.click();
-
+		test.log(LogStatus.PASS, "Sign Up using Provided Details", "Signed Up");
 	}
 
 }

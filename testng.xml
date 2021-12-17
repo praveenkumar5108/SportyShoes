@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
   <parameter name="Email" value="abc@gmail.com"></parameter>
   <parameter name="Password" value="ABCdg1234@#"></parameter>
+  <parameter name="WrongPassword" value="STuff1234##"></parameter>
   <parameter name="FirstName" value="Praveen"></parameter>
    <parameter name="LastName" value="Kumar"></parameter>
     <parameter name="Age" value="23"></parameter>

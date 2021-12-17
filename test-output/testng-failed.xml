@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Email" value="abc@gmail.com"/>
+    <parameter name="Address" value="Andhra Pradesh"/>
+    <parameter name="FirstName" value="Praveen"/>
+    <parameter name="LastName" value="Kumar"/>
+    <parameter name="Age" value="23"/>
+    <parameter name="Password" value="ABCdg1234@#"/>
     <classes>
-      <class name="restapi.GetRequest">
+      <class name="tests.LoginPageTest">
         <methods>
-          <include name="GetCall"/>
+          <include name="teardown"/>
+          <include name="ReportSetup"/>
+          <include name="setup"/>
+          <include name="NegetiveLoginTest"/>
+          <include name="ReportTearDown"/>
         </methods>
-      </class> <!-- restapi.GetRequest -->
+      </class> <!-- tests.LoginPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

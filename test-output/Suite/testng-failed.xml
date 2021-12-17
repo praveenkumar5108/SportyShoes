@@ -9,14 +9,15 @@
     <parameter name="Age" value="23"/>
     <parameter name="Password" value="ABCdg1234@#"/>
     <classes>
-      <class name="tests.ProductAddTest">
+      <class name="tests.LoginPageTest">
         <methods>
           <include name="teardown"/>
-          <include name="LoginTest" invocation-numbers="0"/>
           <include name="ReportSetup"/>
           <include name="setup"/>
+          <include name="NegetiveLoginTest"/>
+          <include name="ReportTearDown"/>
         </methods>
-      </class> <!-- tests.ProductAddTest -->
+      </class> <!-- tests.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
